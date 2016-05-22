@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.rocky.userdefined.list.ListActivity">
+<ListView
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="multipleChoice"
+    android:dividerHeight="1dp"
+    android:scrollbars="none"
+    android:layout_above="@+id/my_layout_bottom"
+    />
+    <LinearLayout
+        android:id="@+id/my_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_weight="1"
+            android:id="@+id/all_sel"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="全部取消"
+            android:layout_weight="1"
+            android:id="@+id/all_unsel"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

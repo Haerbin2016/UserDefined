@@ -52,6 +52,8 @@ public class ListActivity extends AppCompatActivity {
             mListView.setItemChecked(i,true);
         }
 
+
+
     }
 //    全不选
     @OnClick(R.id.all_unsel)

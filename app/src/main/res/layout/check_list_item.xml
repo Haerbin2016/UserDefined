@@ -8,6 +8,7 @@
         android:layout_gravity="right|center_vertical"
         android:clickable="false"
         android:focusable="false"
+        android:button="@drawable/item_selector"
         />
     <LinearLayout
         android:layout_width="match_parent"

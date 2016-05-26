@@ -26,6 +26,58 @@
         android:layout_toRightOf="@id/btn_list"
         android:id="@+id/btn_point"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paint"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_animation"
+        android:id="@+id/btn_paint"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base Paint"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btn_paint"
+        android:layout_below="@id/btn_animation"
+        android:id="@+id/btn_base_paint"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="webView"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btn_base_paint"
+        android:layout_below="@id/btn_animation"
+        android:id="@+id/btn_webview"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlogSide"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_paint"
+        android:id="@+id/btn_blog_side"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="泛型"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_paint"
+        android:layout_toRightOf="@+id/btn_blog_side"
+        android:id="@+id/btn_genericity"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="popWin"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_paint"
+        android:layout_toRightOf="@+id/btn_genericity"
+        android:id="@+id/btn_test_popwin"
+        />
     <TextView
         android:id="@+id/tv"
         android:layout_width="100dp"
@@ -38,6 +90,6 @@
         android:id="@+id/my_point_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_list"
+        android:layout_below="@+id/btn_paint"
         />
 </RelativeLayout>

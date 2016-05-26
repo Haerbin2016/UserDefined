@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.rocky.userdefined.blogsidebar.BlogSideActivity">
+    <ListView
+        android:id="@+id/index_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        android:layout_toLeftOf="@+id/index_slide_bar"
+        />
+    <com.example.rocky.userdefined.blogsidebar.IndexSideBar
+        android:id="@+id/index_slide_bar"
+        android:layout_width="23dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/index_letter_bg"
+        />
+    <TextView
+        android:id="@+id/index_slide_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/index_slide_bar"
+        android:gravity="center"
+        android:textColor="#ff5e00"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/list_lable_screen"
+        />
+</RelativeLayout>

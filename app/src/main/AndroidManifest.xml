@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rocky.userdefined">
+          package="com.example.rocky.userdefined">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,12 +12,25 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".list.ListActivity"></activity>
+        <activity android:name=".list.ListActivity"/>
+        <activity android:name=".paint.PaintActivity"/>
+        <activity android:name=".paint.BasePaintActivity">
+        </activity>
+        <activity android:name=".webview.WebViewActivity">
+        </activity>
+        <activity android:name=".blogsidebar.BlogSideActivity">
+        </activity>
+        <activity android:name=".genericity.GenericityActivity">
+        </activity>
+        <activity android:name=".popwin.PopWinActivity">
+        </activity>
+        <activity android:name=".service.PlayMusicActivity">
+        </activity>
     </application>
 
 </manifest>

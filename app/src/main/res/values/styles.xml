@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="pop_text_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="context_MenuAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
+
+    </style>
+
 </resources>

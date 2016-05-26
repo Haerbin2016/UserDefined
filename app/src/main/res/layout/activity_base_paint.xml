@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rocky.userdefined.paint.BasePaintActivity">
+    <com.example.rocky.userdefined.paint.MyBaseView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/my_base_view"
+        />
+    <com.example.rocky.userdefined.paint.MyRegionView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/my_base_view"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+    android:background="#66000000"
+    >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2.35dp"
+            android:background="#fa7829"
+            />
+
+        <TextView
+            android:id="@+id/pop_computer"
+            style="@style/pop_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算机"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/list_line"
+            />
+
+        <TextView
+            android:id="@+id/pop_financial"
+            style="@style/pop_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="金融"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/list_line"
+            />
+
+        <TextView
+            android:id="@+id/pop_manager"
+            style="@style/pop_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入"
+
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2.35dp"
+            android:background="#fa7829"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

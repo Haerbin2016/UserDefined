@@ -16,10 +16,16 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.rocky.userdefined.blogsidebar.BlogSideActivity;
+import com.example.rocky.userdefined.genericity.GenericityActivity;
 import com.example.rocky.userdefined.list.CharEvaluator;
 import com.example.rocky.userdefined.list.ListActivity;
 import com.example.rocky.userdefined.list.MyEvaluatorFloat;
 import com.example.rocky.userdefined.list.MyPointView;
+import com.example.rocky.userdefined.paint.BasePaintActivity;
+import com.example.rocky.userdefined.paint.PaintActivity;
+import com.example.rocky.userdefined.popwin.PopWinActivity;
+import com.example.rocky.userdefined.webview.WebViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -138,5 +144,37 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(mButtonList,"rotationY",0,180);
         animator.setDuration(3000);
         animator.start();
+    }
+    @OnClick(R.id.btn_paint)
+    void btn_paint(View view){
+       Intent intent = new Intent(MainActivity.this, PaintActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_base_paint)
+    void btn_base_paint(View view){
+        Intent intent = new Intent(MainActivity.this, BasePaintActivity.class);
+        startActivity(intent);
+    }
+    @OnClick(R.id.btn_webview)
+    void btn_web_view(View view){
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+        startActivity(intent);
+    }
+    @OnClick(R.id.btn_blog_side)
+    void btn_blog_side(View view){
+        Intent intent = new Intent(MainActivity.this, BlogSideActivity.class);
+        startActivity(intent);
+    }
+    @OnClick(R.id.btn_genericity)
+    void btn_btn_genericity(View view){
+        Intent intent = new Intent(MainActivity.this, GenericityActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_test_popwin)
+    void btn_test_popwin(View view){
+        Intent intent = new Intent(MainActivity.this, PopWinActivity.class);
+        startActivity(intent);
     }
 }

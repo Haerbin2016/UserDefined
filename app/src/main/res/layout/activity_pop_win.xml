@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rocky.userdefined.popwin.PopWinActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_win_menu"
+        android:text="菜单"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_popwin_btn"
+        android:layout_alignParentRight="true"
+        android:text="ShowPopWin"
+        />
+
+
+</RelativeLayout>

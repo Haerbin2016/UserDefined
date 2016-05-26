@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    function ok(){
+        window.control.toastMessage("哈哈,I am webview msg");
+    }
+    function sum(i,m){
+        var result = i+m;
+        document.getElementById("h").innerHTML = result;
+        window.control.onSumResult(result);
+    }
+
+    </script>
+
+</head>
+<body>
+<h1 id="h">欢迎光临启舰的blog</h1>
+<input type="button" value="js调native" onclick="sum()">
+</body>
+</html>

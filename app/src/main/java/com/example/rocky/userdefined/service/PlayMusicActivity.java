@@ -14,7 +14,7 @@ import butterknife.OnClick;
 
 public class PlayMusicActivity extends AppCompatActivity {
 
-    private static final TAG = "PlayMusic"
+    private static final String TAG = "PlayMusic";
     private static final String OP = "op";
 
     private Intent mIntent = null;
@@ -24,36 +24,40 @@ public class PlayMusicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_play_music);
         ButterKnife.bind(this);
         //
         mBundle = new Bundle();
-        mIntent = new Intent("org.allin.android.musicService");
+        mIntent = new Intent();
+        mIntent.setAction("com.test");
+        mIntent.setPackage("com.example.rocky.userdefined");
     }
 
     private void startMyService(int op){
-
-        mBundle.putBundle(OP,op);
+        //mIntent = new Intent("org.allin.android.musicService");
+        //mIntent = new Intent(PlayMusicActivity.this,MusicService.class);
+        mBundle.putInt(OP,op);
+        mIntent.putExtras(mBundle);
         startService(mIntent);
     }
 
     /*事件*/
     @OnClick(R.id.btn_play)
     void btn_play(View view){
-        Log.d(TAG,"onClick:play")
+        Log.d(TAG,"onClick:play");
         startMyService(1);
     }
     //stop
     @OnClick(R.id.btn_stop)
     void btn_stop(View view){
-        Log.d(TAG,"onClick:stop")
+        Log.d(TAG,"onClick:stop");
         startMyService(2);
     }
     //pause
     @OnClick(R.id.btn_pause)
     void btn_pause(View view){
-        Log.d(TAG,"onClick:pause")
+        Log.d(TAG,"onClick:pause");
         startMyService(3);
     }
     //exit

@@ -2,6 +2,7 @@ package com.example.rocky.userdefined.webview;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.rocky.userdefined.R;
@@ -23,6 +25,8 @@ public class WebViewActivity extends AppCompatActivity {
 
     @BindView(R.id.web_view)
     WebView mWebView;
+    @BindView(R.id.btn_url)
+    TextView mBtnUrl;
 
     @SuppressLint({ "JavascriptInterface", "SetJavaScriptEnabled" })
     @Override
@@ -33,6 +37,12 @@ public class WebViewActivity extends AppCompatActivity {
         //
         ButterKnife.bind(this);
         //
+        /*
+        ColorStateList colorStateList = getResources().getColorStateList(R.color.button_text,getTheme());
+        if( null != colorStateList){
+            mBtnUrl.setTextColor(colorStateList);
+        }
+        */
         //mWebView.setWebViewClient(new WebViewClient());
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -51,6 +61,9 @@ public class WebViewActivity extends AppCompatActivity {
         //mWebView.loadUrl("http://www.baidu.com");
        // mWebView.loadUrl("file:///android_asset/web/test.html");
         mWebView.loadUrl("javascript:sum(3,8)");
+
+
+
     }
 
     public class JSBridge{

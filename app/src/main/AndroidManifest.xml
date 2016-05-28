@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.rocky.userdefined">
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 调用摄像头权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 录制视频/音频权限 -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
     <application
         android:allowBackup="true"
@@ -30,6 +35,17 @@
         <activity android:name=".popwin.PopWinActivity">
         </activity>
         <activity android:name=".service.PlayMusicActivity">
+        </activity>
+
+        <service android:name=".service.MusicService">
+            <intent-filter>
+                <action android:name="com.test"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".span.SpanActivity">
+        </activity>
+        <activity android:name=".photo.PhotoActivity">
         </activity>
     </application>
 

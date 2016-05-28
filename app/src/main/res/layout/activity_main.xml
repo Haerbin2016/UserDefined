@@ -78,6 +78,33 @@
         android:layout_toRightOf="@+id/btn_genericity"
         android:id="@+id/btn_test_popwin"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MusicPlay"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_blog_side"
+
+        android:id="@+id/btn_test_music"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Span"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_blog_side"
+        android:layout_toRightOf="@id/btn_test_music"
+        android:id="@+id/btn_test_span"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_blog_side"
+        android:layout_toRightOf="@id/btn_test_span"
+        android:id="@+id/btn_test_photo"
+        />
     <TextView
         android:id="@+id/tv"
         android:layout_width="100dp"
@@ -86,6 +113,8 @@
         android:text="Hello World!"
         android:layout_centerInParent="true"
         />
+
+
     <com.example.rocky.userdefined.list.MyPointView
         android:id="@+id/my_point_view"
         android:layout_width="wrap_content"

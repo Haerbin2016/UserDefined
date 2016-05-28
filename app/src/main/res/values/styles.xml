@@ -17,6 +17,12 @@
     <style name="context_MenuAnim" parent="@android:style/Animation.Activity">
         <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
         <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
+    </style>
+    <style name="my_url">
+        <item name="android:height">45dp</item>
+        <item name="android:width">200dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">32sp</item>
 
     </style>
 

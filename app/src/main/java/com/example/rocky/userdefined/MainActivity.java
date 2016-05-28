@@ -24,7 +24,10 @@ import com.example.rocky.userdefined.list.MyEvaluatorFloat;
 import com.example.rocky.userdefined.list.MyPointView;
 import com.example.rocky.userdefined.paint.BasePaintActivity;
 import com.example.rocky.userdefined.paint.PaintActivity;
+import com.example.rocky.userdefined.photo.PhotoActivity;
 import com.example.rocky.userdefined.popwin.PopWinActivity;
+import com.example.rocky.userdefined.service.PlayMusicActivity;
+import com.example.rocky.userdefined.span.SpanActivity;
 import com.example.rocky.userdefined.webview.WebViewActivity;
 
 import butterknife.BindView;
@@ -175,6 +178,24 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btn_test_popwin)
     void btn_test_popwin(View view){
         Intent intent = new Intent(MainActivity.this, PopWinActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_test_music)
+    void btn_test_music(View view){
+        Intent intent = new Intent(MainActivity.this, PlayMusicActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_test_span)
+    void btn_test_span(View view){
+        Intent intent = new Intent(MainActivity.this, SpanActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_test_photo)
+    void btn_test_photo(View view){
+        Intent intent = new Intent(MainActivity.this, PhotoActivity.class);
         startActivity(intent);
     }
 }
